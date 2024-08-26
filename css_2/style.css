@@ -1,0 +1,112 @@
+/* Universal Selector */
+
+* {
+  font-family: cursive;
+}
+
+/* Element selector */
+
+h1,
+h3 {
+  color: #b92b27;
+}
+
+/* id selector */
+
+#login {
+  background-color: white;
+}
+#signup {
+  background-color: #b92b27;
+  color: white;
+}
+
+/* class selector */
+
+.upvote {
+  background-color: green;
+  color: white;
+}
+
+/* Descendent Selector */
+
+nav ul li a {
+  text-decoration: none;
+  color: hotpink;
+}
+p a {
+  text-decoration: none;
+  background-color: lightgreen;
+  color: purple;
+}
+
+/* sibling combinator */
+
+p + h3 {
+  /*Here we are accessing all the h3 which are sibling that is on the same level as of the p tag.*/
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.upvote + button {
+  background-color: lightcyan;
+}
+
+/*Child combinator*/
+
+div > input {
+  /*It is only for the direct child*/
+  background-color: lightskyblue;
+}
+
+/* Attribute selector */
+
+input[type="text"] {
+  color: yellowgreen;
+}
+
+input[type="password"] {
+  color: red;
+}
+
+/* input[type]{
+    background-color: #fff;
+} */
+
+/* Pseaudo class selector */
+
+.upvote:hover {
+  background-color: yellow;
+  color: black;
+}
+.upvote:active {
+  background-color: red;
+  color: white;
+}
+
+input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
+
+div:nth-of-type(2) {
+    background-color: lightgoldenrodyellow;
+}
+
+main div:nth-of-type(2n+1) {
+    background-color:lightsalmon;
+} 
+
+/* pseudo element selector */
+
+h1::first-letter{
+    color: black;
+}
+
+p::first-line{
+    color: blue;
+}
+
+p::selection{
+    background-color:greenyellow;
+}

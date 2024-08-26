@@ -1,0 +1,16 @@
+div{
+    background-color: hotpink;
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+    /*all these properties below follow the clockwise direction i.e top right bottom left*/
+    border-radius: 0px 20px 25px 25px;
+    padding: 15px;
+    margin:10px;
+}
+button{
+    background-color: darksalmon;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}

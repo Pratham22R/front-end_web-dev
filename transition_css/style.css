@@ -1,0 +1,14 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin-top: 10px;
+    /* transition: margin-top 3s ease-in 1s; */
+    transition: border-radius 1.5s ease-in 1s;
+}
+
+div:hover{
+    /* margin-top: 300px; */
+    background-color: pink;
+    border-radius: 50%;
+}

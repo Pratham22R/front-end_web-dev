@@ -1,0 +1,21 @@
+.main{
+    height: 200px;
+    width: 75px;
+    border: 2px solid black;
+}
+.in{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 25px;
+}
+.in:first-child{
+    background-color: red;
+}
+.in:nth-child(2){
+    background-color: yellow;
+}
+.in:last-child{
+    background-color: green;
+}

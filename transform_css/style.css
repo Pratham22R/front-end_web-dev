@@ -1,0 +1,34 @@
+section{
+    margin-top: 100px;
+}
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    /* border: 2px solid black; */
+    margin: 10px;
+}
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+#one{
+    transform: rotate(45deg);
+    transform: skew(45deg);
+    box-shadow: 5px 5px 10px yellowgreen;
+}
+
+#three{
+    transform: rotate(-45deg);
+    transform: translate(100px);
+}
+#five{
+    transform: rotate(180deg);
+    transform: scale(0.5,1);
+    /* this can also be done like this:-
+    transform: scalex(0.5) */
+}

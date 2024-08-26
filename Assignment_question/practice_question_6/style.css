@@ -1,0 +1,24 @@
+.box {
+  height: 150px;
+  width: 300px;
+  border-color: grey;
+  border: 5px dotted black;
+  margin-top: 20px;
+  margin-right: 1em;
+  margin-bottom: 40px;
+  margin-left: 2em;
+  padding: 1em;
+}
+.t {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 10px;
+}
+ul {
+  /*Li (listitems) have their display property set to “list-item” by default which makes them a bulleted list item. When this property is reset by you to “inline”,then the bullet  points also disappear.Inaway,we override the default settings with our CSS.*/
+  display: inline;
+}
