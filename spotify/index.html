@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/Delta/assets/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="/Delta/assets/library_icon.png" alt="library icon" />
+              <a href="#">Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy we'll help you</p>
+            <button class="badge">Create playlist</button>
+          </div>
+          <div class="box">
+            <p class="box-p1">Let's find some podcast to follow</p>
+            <p class="box-p2">We'll keep you updated of new episodes</p>
+            <button class="badge">Browse podcast</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="left">
+            <img src="/Delta/assets/backward_icon.png" alt="backwrd icon" />
+            <img
+              src="/Delta/assets/forward_icon.png"
+              class="vanish"
+              alt="forward icon"
+            />
+          </div>
+          <div class="right">
+            <button class="badge vanish">Explore Premium</button>
+            <button class="badge dark">
+              <i class="fa-solid fa-download"></i>Install App
+            </button>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Recently Played</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="/Delta/assets/card1img.jpeg" alt="" />
+              <p class="head">Top - 50 Global</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Trending</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="/Delta/assets/card2img.jpeg" alt="" />
+              <p class="head">Mahisive jinna...</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+            <div class="card">
+              <img src="/Delta/assets/card3img.jpeg" alt="" />
+              <p class="head">Mere pass tum...</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+            <div class="card">
+              <img src="/Delta/assets/card4img.jpeg" alt="" />
+              <p class="head">Alter Ego Naa...</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+            <div class="card">
+              <img src="/Delta/assets/card1img.jpeg" alt="" />
+              <p class="head">Top - 50 Global</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Featured Charts</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="/Delta/assets/card5img.jpeg" alt="" />
+              <p class="head">Top Song - Global</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+            <div class="card">
+              <img src="/Delta/assets/card6img.jpeg" alt="" />
+              <p class="head">Top Song - India</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+            <div class="card">
+              <img src="/Delta/assets/card1img.jpeg" alt="" />
+              <p class="head">Top - 50 Global</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+            <div class="card">
+              <img src="/Delta/assets/card4img.jpeg" alt="" />
+              <p class="head">Top - 50 Global</p>
+              <p class="info">Your daily update of most played...</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <div class="image">
+            <img src="https://i.scdn.co/image/ab67616d00004851232711f7d66a1e19e89e28c5" alt="">
+          </div>
+          <div class="con">
+            <p class="song">That's what i like</p>
+            <p class="singer">Bruno Mars</p>
+          </div>
+          <div class="add">
+            <img src="/Delta/assets2/album_icon1.png" alt="">
+          </div>
+        </div>
+        <div class="player">
+          <div class="playback-icon">
+            <img src="/Delta/assets/player_icon1.png" alt="" />
+            <img src="/Delta/assets/player_icon2.png" alt="" />
+            <img
+              src="/Delta/assets/player_icon3.png"
+              style="height: 2rem; width: 2rem; opacity: 1"
+              alt=""
+            />
+            <img src="/Delta/assets/player_icon4.png" alt="" />
+            <img src="/Delta/assets/player_icon5.png" alt="" />
+          </div>
+          <div class="spd">
+            <span id="sliderValue">0:00</span>
+            <input
+              type="range"
+              min="0"
+              max="213"
+              class="slider"
+              step="1"
+              id="myRange"
+            />
+            <span>3:33</span>
+          </div>
+        </div>
+        <div class="control">
+          <img src="/Delta/assets2/controls_icon1.png" alt="">
+          <img src="/Delta/assets2/controld_icon2.png" alt="">
+          <img src="/Delta/assets2/controls_icon3.png" alt="">
+          <img src="/Delta/assets2/controls_icon4.png" alt="">
+           <img src="/Delta/assets2/controls_icon5.png" alt="" class="sound">
+        </div>
+      </div>
+    </div>
+    <script>
+      const slider = document.getElementById("myRange");
+      const sliderValue = document.getElementById("sliderValue");
+
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
+      }
+
+      function updateSlider() {
+        const value =
+          ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+        slider.style.background = `linear-gradient(to right, #1bd760 ${value}%, #fff ${value}%)`;
+        sliderValue.textContent = formatTime(slider.value); // Update displayed value
+      }
+
+      slider.addEventListener("input", updateSlider);
+      updateSlider(); // Initialize with the current value
+    </script>
+  </body>
+</html>
