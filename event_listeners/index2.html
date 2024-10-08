@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Input Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="nameHeading">Your Name Will Appear Here</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+
+    <script>
+        const input = document.getElementById('nameInput');
+        const heading = document.getElementById('nameHeading');
+
+        input.addEventListener('input', () => {
+            // Allow only letters and spaces
+            const sanitizedName = input.value.replace(/[^a-zA-Z\s]/g, '');
+            heading.textContent = sanitizedName || 'Your Name Will Appear Here';
+        });
+    </script>
+
+</body>
+</html>
