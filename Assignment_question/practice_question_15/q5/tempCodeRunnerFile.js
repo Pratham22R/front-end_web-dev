@@ -1,1 +1,0 @@
-rand(start,end);
