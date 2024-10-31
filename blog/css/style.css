@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between title and button */
+    align-items: center;
+    padding: 15px;
+    background-color: white; /* Navbar background color set to white */
+    color: maroon; /* Navbar text color set to maroon */
+    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border for separation */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 36px; /* Increased font size for navbar title */
+}
+
+.add-blog {
+    padding: 10px 15px; /* Add padding for better click area */
+    background-color: #0056b3; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.add-blog:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+#blogContainer {
+    margin-top: 20px; /* Space above blog entries */
+}
+
+.blog {
+    background-color: white; /* Blog entry background */
+    border: 1px solid #ddd; /* Border around blog entry */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside blog entry */
+    margin-bottom: 15px; /* Space between blog entries */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.blog:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.blog h2 {
+    font-size: 20px; /* Blog title size */
+    margin: 0 0 10px; /* Space below the title */
+    color: maroon; /* Blog title color */
+}
+
+.blog p {
+    font-size: 16px; /* Blog content size */
+    margin: 0 0 10px; /* Space below content */
+    color: maroon; /* Blog content color */
+}
+
+button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #28a745; /* Green button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: maroon; /* Link color */
+    font-weight: bold; /* Bold links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Additional styles for the Add New Blog page */
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    color: maroon; /* Same color as blog titles */
+    margin: 20px 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.submit-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.navbar {
+    background-color: white; /* White background for navbar */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.back-button {
+    background-color: #28a745; /* Green color for the back button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+.container {
+    max-width: 500px; /* Width for the form container */
+    margin: 30px auto; /* Centering the container */
+    padding: 20px;
+    background-color: white; /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}

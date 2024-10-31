@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <link rel="stylesheet" href="css/style3.css"> <!-- Link to custom CSS -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 style="size: 5rem;">
+                <span style="color: maroon; ">B</span>logs for Today
+            </h1>
+            
+        </div>
+    </nav>
+
+    <div class="container" id="blogDetailContainer">
+        <div class="blog-detail-box" id="blogDetail">
+            <h2 class="blog-title"></h2>
+            <p class="blog-content"></p>
+            <a href="index.html" class="back-button">Back to Main</a>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const blogId = params.get('id');
+
+        fetch(`get_blog.php?id=${blogId}`)
+            .then(response => response.json())
+            .then(blog => {
+                document.querySelector('.blog-title').innerText = blog.title.toUpperCase();
+                document.querySelector('.blog-content').innerText = blog.content;
+            });
+    </script>
+</body>
+</html>

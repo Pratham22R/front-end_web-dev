@@ -1,0 +1,53 @@
+/* Add this to your existing style2.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Navbar background color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.blog-detail-box {
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    transition: box-shadow 0.3s ease; /* Transition effect for hover */
+    background-color: #f9f9f9; /* Background color */
+}
+
+.blog-detail-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.blog-title {
+    font-size: 24px; /* Title font size */
+    margin-bottom: 10px; /* Spacing below title */
+}
+
+.blog-content {
+    font-size: 16px; /* Content font size */
+    margin-bottom: 20px; /* Spacing below content */
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px; /* Button padding */
+    background-color: #28a745; /* Button color */
+    color: white; /* Button text color */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.back-button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}

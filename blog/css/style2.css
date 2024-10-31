@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white; /* White background for navbar */
+    padding: 10px 15px; /* Navbar padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+    font-size: 32px; /* Larger size for the heading */
+    font-weight: bold;
+}
+.navbar-brand::first-letter {
+    color: maroon; /* Change the color of the first letter */
+}
+.back-button {
+    background-color: #28a745; /* Green color for the back button */
+    color: white;
+    padding: 8px 15px; /* Adjust padding for button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+.container {
+    max-width: 600px; /* Width for the form container */
+    margin: 30px auto; /* Centering the container */
+    padding: 20px;
+    background-color: white; /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px; /* Size of the Add New Blog title */
+    color: maroon; /* Title color */
+    margin: 20px 0;
+}
+
+.input-field {
+    width: 94%;
+    padding: 15px; /* Increased padding for larger input fields */
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increased font size for better readability */
+}
+
+.submit-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 12px; /* Adjusted padding for a more prominent button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width */
+    font-size: 16px; /* Increased font size */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
