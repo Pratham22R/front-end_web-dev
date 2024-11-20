@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .quote-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .quote-text {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .quote-image {
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Expense Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add_expense.php">Add Expense</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analyze_expense.php">Analyze Expense</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quote Section -->
+    <div class="quote-container">
+        <p class="quote-text" id="quote"></p>
+        <img src="assets/p1.jpg" alt="Piggy Bank" class="quote-image">
+    </div>
+
+    <!-- Typing Effect Script -->
+    <script>
+        const quoteText = '"Track your expenses, grow your savings."';
+        let index = 0;
+        const quoteElement = document.getElementById('quote');
+        const typingSpeed = 100; // Typing speed in milliseconds
+        const delayAfterFinish = 1000; // Delay before resetting
+
+        function typeQuote() {
+            // Add a new character to the quote every `typingSpeed` ms
+            if (index < quoteText.length) {
+                quoteElement.innerHTML += quoteText.charAt(index);
+                index++;
+                setTimeout(typeQuote, typingSpeed);
+            } else {
+                // Once the quote is fully typed, reset it after a delay
+                setTimeout(() => {
+                    quoteElement.innerHTML = ''; // Clear the quote
+                    index = 0; // Reset the index
+                    typeQuote(); // Start typing again
+                }, delayAfterFinish);
+            }
+        }
+
+        // Start typing effect when page loads
+        window.onload = typeQuote;
+    </script>
+</body>
+</html>
